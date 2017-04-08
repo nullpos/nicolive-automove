@@ -1,0 +1,20 @@
+{
+   "content_scripts": [ {
+      "all_frames": false,
+      "js": [ "jquery-3.2.0.min.js", "move.js" ],
+      "matches": [
+         "http://live.nicovideo.jp/watch/*",
+         "http://live2.nicovideo.jp/watch/*"
+      ],
+      "run_at": "document_idle"
+   } ],
+   "description": "ニコ生で次枠に自動で移動するやつ。",
+   "icons": {
+      "128": "icon128.png",
+      "48": "icon48.png"
+   },
+   "manifest_version": 2,
+   "name": "ニコ生次枠移動するやつ",
+   "permissions": [ "http://*.nicovideo.jp/" ],
+   "version": "0.1.5"
+}
